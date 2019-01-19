@@ -35,7 +35,7 @@ public class StepImplementation {
            capabilities.setCapability("version", "");
            capabilities.setPlatform(Platform.LINUX);
 
-            driver = new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
+            driver = new RemoteWebDriver(new URL("http://50.112.161.23:4444/wd/hub"), capabilities);
             driver.manage().window().maximize();
 
 
@@ -49,7 +49,7 @@ public class StepImplementation {
             capabilities.setCapability("version", "");
             capabilities.setPlatform(Platform.LINUX);
 
-            driver = new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
+            driver = new RemoteWebDriver(new URL("http://50.112.161.23:4444/wd/hub"), capabilities);
             driver.manage().window().maximize();
         }
 
