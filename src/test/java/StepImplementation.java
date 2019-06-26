@@ -1,3 +1,4 @@
+import Utilities.VariableDefinitions;
 import com.thoughtworks.gauge.*;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
@@ -26,7 +27,7 @@ public class StepImplementation {
     @Step("Navigate to employee application")
     public void navigateToEmployeeApplication()
     {
-
+        VariableDefinitions.getDriver().get(System.getenv("url"));
         System.out.println("IN");
     }
 
