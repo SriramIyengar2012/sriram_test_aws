@@ -21,117 +21,44 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class StepImplementation {
 
-    private HashSet<Character> vowels;
-    WebDriver driver;
 
 
-    @BeforeSuite
-    public void getBrowser() throws Exception
-    {
-        if(System.getenv("browser").equals("chrome"))
-        {
-           System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Chrome/chromedriver");
-           DesiredCapabilities capabilities = new DesiredCapabilities().chrome();
-           capabilities.setCapability("version", "");
-           capabilities.setPlatform(Platform.LINUX);
-
-            driver = new RemoteWebDriver(new URL("http://50.112.161.23:4444/wd/hub"), capabilities);
-            driver.manage().window().maximize();
-
-
-
-        }
-        if(System.getenv("browser").equals("firefox"))
-        {
-           System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Firefox/geckodriver");
-            // System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Chrome/chromedriver");
-            DesiredCapabilities capabilities = new DesiredCapabilities().firefox();
-            capabilities.setCapability("version", "");
-            capabilities.setPlatform(Platform.LINUX);
-
-            driver = new RemoteWebDriver(new URL("http://50.112.161.23:4444/wd/hub"), capabilities);
-            driver.manage().window().maximize();
-        }
-
-    }
-
-    @Step("Vowels in English language are <vowelString>.")
-    public void setLanguageVowels(String vowelString) {
-        vowels = new HashSet<>();
-        for (char ch : vowelString.toCharArray()) {
-            vowels.add(ch);
-        }
-    }
-
-    @Step("The word <word> has <expectedCount> vowels.")
-    public void verifyVowelsCountInWord(String word, int expectedCount) {
-        int actualCount = countVowels(word);
-      //  assertThat(expectedCount).isEqualTo(actualCount);
-    }
-
-    @Step("Almost all words have vowels <wordsTable>")
-    public void verifyVowelsCountInMultipleWords(Table wordsTable) {
-        for (TableRow row : wordsTable.getTableRows()) {
-            String word = row.getCell("Word");
-            int expectedCount = Integer.parseInt(row.getCell("Vowel Count"));
-            int actualCount = countVowels(word);
-
-           // assertThat(expectedCount).isEqualTo(actualCount);
-        }
-    }
-
-    @Step("Test <value> <value2> <value3>")
-    public void test(String value, String value2, String value3) throws Exception
+    @Step("Navigate to employee application")
+    public void navigateToEmployeeApplication()
     {
 
-   /*     FileUtils.copyFile(new File("test2.csv"), new File ("test.csv"));
-        Reader reader = Files.newBufferedReader(Paths.get("test.csv"));
-        CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
-
-        for (CSVRecord csvRecord : csvParser) {*/
-            System.out.println("1" + value);
-            System.out.println("2" + value2);
-            System.out.println("3" + value3);
-       // }
+        System.out.println("IN");
     }
 
-    @Step("Navigate to Google")
-    public void navigatetogoogle()
+
+
+    @Step("Verify if employee list is displayed")
+    public void verifyIfEmployeeDisplayed()
     {
 
-        driver.get("http://www.google.com");
-        driver.quit();
+        System.out.println("IN");
 
     }
 
-    @Step("Print <value>")
-    public void test2(String value)
+
+    @Step("Create an Employee")
+    public void createEmployee()
     {
 
+        System.out.println("IN");
     }
 
-    @BeforeSpec
-    public void copy(ExecutionContext e) throws Exception
+
+    @Step("Verify if employee is added")
+    public void verifyEmployeeAddedd()
     {
-        System.out.println(e.getCurrentScenario().getName());
-/*       if(e.getCurrentScenario().getName().equals("sce2")) {
-           File f = new File("test2.csv");
-           FileUtils.copyFile(f, new File("test.csv"));
-       }
-       else if(e.getCurrentScenario().getName().equals("sce3"))
-       {
-           File f = new File("test3.csv");
-           FileUtils.copyFile(f, new File("test.csv"));
-       }*/
+        System.out.println("IN");
+
+
+
+
     }
 
-    private int countVowels(String word) {
-        int count = 0;
-        for (char ch : word.toCharArray()) {
-            if (vowels.contains(ch)) {
-                count++;
-            }
-        }
-        return count;
-    }
+
+
 }
