@@ -19,7 +19,7 @@ public class DriverFactory {
             capabilities.setCapability("version", "");
             capabilities.setPlatform(Platform.LINUX);
 
-            VariableDefinitions.setDriver(new RemoteWebDriver(new URL("http://grid:4444/wd/hub"), capabilities));
+            VariableDefinitions.setDriver(new RemoteWebDriver(new URL("http://grid:24444/wd/hub"), capabilities));
             VariableDefinitions.getDriver().manage().window().maximize();
 
         }
@@ -28,7 +28,7 @@ public class DriverFactory {
             capabilities.setCapability("version", "");
             capabilities.setPlatform(Platform.LINUX);
 
-            VariableDefinitions.setDriver(new RemoteWebDriver(new URL("http://grid:4444/wd/hub"), capabilities));
+            VariableDefinitions.setDriver(new RemoteWebDriver(new URL("http://grid:24444/wd/hub"), capabilities));
             VariableDefinitions.getDriver().manage().window().maximize();
 
         }
