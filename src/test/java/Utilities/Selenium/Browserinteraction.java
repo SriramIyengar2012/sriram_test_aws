@@ -22,4 +22,10 @@ public class Browserinteraction {
         return VariableDefinitions.getDriver().findElement(By.xpath("//img[@alt='"+value+"']"));
     }
 
+    public static WebElement clickEmployee(String value)
+    {
+        return VariableDefinitions.getDriver().findElement(By.xpath("//span[contains(text(),'"+value+"')]/.."));
+    }
+
+
 }

@@ -11,6 +11,7 @@ public class Employeepage {
     public static  String addbutton = "//span[contains(text(), 'Add')]/..";
     public static  String enterEmployeeName = "//input[@placeholder='Employee Name']";
     public static  String savebutton = "//span[contains(text(), 'Save')]/..";
+    public static  String deletebutton = "//span[contains(text(), 'Delete')]/..";
 
 
 

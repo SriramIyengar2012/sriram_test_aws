@@ -74,6 +74,34 @@ public class StepImplementation {
 
     }
 
+    @Step("Delete <employee>")
+    public void deleteEmployee(String employee)
+    {
+        Browserinteraction.clickEmployee(employee).click();
+        Browserinteraction.elementOperationByXpath(Employeepage.deletebutton).click();
+
+
+    }
+
+    @Step("Verify if <employee> is deleted")
+    public void verifyEmployeeDeleted(String employee)
+    {
+        Boolean employeefalse = true;
+        try {
+            Browserinteraction.dynamicLink("Testing").isDisplayed();
+        }
+        catch(Exception e)
+        {
+            employeefalse = false;
+        }
+        Assert.isTrue(employeefalse, "Employee deleted successfully");
+        Gauge.writeMessage("Employee deleted successfully"+ employee);
+        System.out.println("IN");
+
+
+
+
+    }
 
 
 }

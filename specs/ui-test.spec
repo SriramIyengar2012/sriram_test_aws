@@ -23,6 +23,16 @@ Verify if we are able to create a new employee
 * Create an Employee
 * Verify if <employee> is added
 
+Verify if we are able to delete an employee
+---------------------------------------------------
+|employee|
+|Testing|
+
+* Navigate to employee application
+* Delete <employee>
+* Verify if <employee> is deleted
+
+
 
 
 
