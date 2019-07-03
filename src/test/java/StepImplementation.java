@@ -34,6 +34,7 @@ public class StepImplementation {
     {
         VariableDefinitions.getDriver().get(System.getenv("url"));
         System.out.println("IN");
+        System.out.println(VariableDefinitions.getDriver().getPageSource());
     }
 
 
