@@ -16,8 +16,15 @@ Verify if we are able to see the list of employees
 
 Verify if we are able to create a new employee
 ---------------------------------------------------
+|employee|
+|Testing|
 
 * Navigate to employee application
 * Create an Employee
-* Verify if employee is added
+* Verify if <employee> is added
+
+
+
+
+
 

@@ -4475,3 +4475,34 @@ Total time taken: 11.574s
 20:36:51.943 
 Total time taken: 4.103s
 20:36:52.056 Updates are available. Run `gauge update -c` for more info.
+22:29:18.027 Executing => gauge run --machine-readable --hide-suggestion --simple-console specs/ui-test.spec
+22:29:19.052 Plugin java is already installed.
+22:29:19.153 Plugin html-report is already installed.
+22:29:19.159 [ParseError] /Users/sriramiyengar/Documents/hackathontest/sriram_test_aws/specs/ui-test.spec:22 Dynamic parameter <employee> could not be resolved => 'Verify if <employee> is added'
+22:29:19.225 [ParseError] /Users/sriramiyengar/Documents/hackathontest/sriram_test_aws/specs/ui-test.spec:22 Dynamic parameter <employee> could not be resolved => 'Verify if <employee> is added'
+22:29:20.042 Checking updates...
+22:29:24.400 Runner connection error: Runner with pid 1211 quit unexpectedly(exit status 1).
+22:29:24.401 Error while killing runner: os: process already finished
+22:29:24.402 Failed to start gauge API: Runner with pid 1211 quit unexpectedly(exit status 1).
+22:29:34.025 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if employee list is displayed" > 
+22:29:34.026 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if employee list is displayed" parameterizedStepValue:"Verify if employee list is displayed" > > 
+22:29:34.035 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Create an Employee" > 
+22:29:34.035 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Create an Employee" parameterizedStepValue:"Create an Employee" > > 
+22:29:34.036 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to employee application" > 
+22:29:34.036 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to employee application" parameterizedStepValue:"Navigate to employee application" > > 
+22:29:34.036 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if <employee> is added" > 
+22:29:34.037 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if {} is added" parameterizedStepValue:"Verify if <employee> is added" parameters:"employee" > > 
+22:31:17.783 Runner connection error: Runner with pid 1290 quit unexpectedly(exit status 1).
+22:31:17.807 Error while killing runner: os: process already finished
+22:31:17.808 Failed to start gauge API: Runner with pid 1290 quit unexpectedly(exit status 1).
+22:31:30.923 Plugin java is already installed.
+22:31:30.970 Plugin html-report is already installed.
+22:31:31.811 Checking updates...
+22:31:40.365 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if employee list is displayed" > 
+22:31:40.366 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if employee list is displayed" parameterizedStepValue:"Verify if employee list is displayed" > > 
+22:31:40.374 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Create an Employee" > 
+22:31:40.374 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Create an Employee" parameterizedStepValue:"Create an Employee" > > 
+22:31:40.375 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to employee application" > 
+22:31:40.375 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to employee application" parameterizedStepValue:"Navigate to employee application" > > 
+22:31:40.375 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if <employee> is added" > 
+22:31:40.375 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if {} is added" parameterizedStepValue:"Verify if <employee> is added" parameters:"employee" > > 

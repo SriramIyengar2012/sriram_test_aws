@@ -61,11 +61,12 @@ public class StepImplementation {
     }
 
 
-    @Step("Verify if employee is added")
-    public void verifyEmployeeAddedd()
+    @Step("Verify if <employee> is added")
+    public void verifyEmployeeAddedd(String employee)
     {
        Boolean employeeaddedd = Browserinteraction.dynamicLink("Testing").isDisplayed();
         Assert.isTrue(employeeaddedd, "Employee created successfully");
+        Gauge.writeMessage("New Employee Added"+ employee);
         System.out.println("IN");
 
 
