@@ -86,13 +86,13 @@ public class StepImplementation {
     @Step("Verify if <employee> is deleted")
     public void verifyEmployeeDeleted(String employee)
     {
-        Boolean employeefalse = true;
+        Boolean employeefalse = false;
         try {
             Browserinteraction.dynamicLink("Testing").isDisplayed();
         }
         catch(Exception e)
         {
-            employeefalse = false;
+            employeefalse = true;
         }
         Assert.isTrue(employeefalse, "Employee deleted successfully");
         Gauge.writeMessage("Employee deleted successfully"+ employee);

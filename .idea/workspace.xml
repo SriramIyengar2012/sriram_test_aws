@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c866edc4-18eb-4b28-88c7-3e80903ec79c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/specs/ui-test.spec" afterPath="$PROJECT_DIR$/specs/ui-test.spec" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepImplementation.java" afterPath="$PROJECT_DIR$/src/test/java/StepImplementation.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Objectrepository/Employeepage.java" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Objectrepository/Employeepage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Selenium/Browserinteraction.java" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Selenium/Browserinteraction.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +49,8 @@
       <file leaf-file-name="StepImplementation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/StepImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="316">
+              <caret line="96" column="22" lean-forward="false" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -552,8 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StepImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="316">
+          <caret line="96" column="22" lean-forward="false" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
