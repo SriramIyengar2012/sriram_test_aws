@@ -4456,3 +4456,22 @@ Total time taken: 15.074s
 13:05:01.815 Scenarios:	1 executed	1 passed	0 failed	0 skipped
 13:05:01.815 
 Total time taken: 11.574s
+20:36:31.060 Unable to send analytics data, timed out
+20:36:32.095 Unable to send analytics data, timed out
+20:36:32.375 Plugin java is already installed.
+20:36:32.478 Plugin html-report is already installed.
+20:36:34.230 Checking updates...
+20:36:43.090 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if employee list is displayed" > 
+20:36:43.128 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if employee list is displayed" parameterizedStepValue:"Verify if employee list is displayed" > > 
+20:36:43.139 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Create an Employee" > 
+20:36:43.139 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Create an Employee" parameterizedStepValue:"Create an Employee" > > 
+20:36:43.140 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to employee application" > 
+20:36:43.140 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to employee application" parameterizedStepValue:"Navigate to employee application" > > 
+20:36:43.141 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if employee is added" > 
+20:36:43.141 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if employee is added" parameterizedStepValue:"Verify if employee is added" > > 
+20:36:51.404 Plugin [Html Report] with pid [724] has exited
+20:36:51.943 Specifications:	0 executed	0 passed	0 failed	0 skipped
+20:36:51.943 Scenarios:	0 executed	0 passed	0 failed	0 skipped
+20:36:51.943 
+Total time taken: 4.103s
+20:36:52.056 Updates are available. Run `gauge update -c` for more info.
