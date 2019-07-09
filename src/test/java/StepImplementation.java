@@ -1,3 +1,4 @@
+import Utilities.LoggingResult;
 import Utilities.Objectrepository.Employeepage;
 import Utilities.Selenium.Browserinteraction;
 import Utilities.VariableDefinitions;
@@ -65,8 +66,15 @@ public class StepImplementation {
     public void verifyEmployeeAddedd(String employee)
     {
        Boolean employeeaddedd = Browserinteraction.dynamicLink("Testing").isDisplayed();
-        Assert.isTrue(employeeaddedd, "Employee created successfully");
-        Gauge.writeMessage("New Employee Added"+ employee);
+       try {
+           Assert.isTrue(employeeaddedd, "Employee created successfully");
+           Gauge.writeMessage("New Employee Added" + employee);
+           LoggingResult.logSuccessfulScenario();
+       }
+       catch(Exception e)
+       {
+           LoggingResult.logFailedScenario();
+       }
         System.out.println("IN");
 
 
@@ -94,8 +102,17 @@ public class StepImplementation {
         {
             employeefalse = true;
         }
-        Assert.isTrue(employeefalse, "Employee deleted successfully");
-        Gauge.writeMessage("Employee deleted successfully"+ employee);
+
+        try {
+            Assert.isTrue(employeefalse, "Employee deleted successfully");
+            LoggingResult.logSuccessfulScenario();
+
+            Gauge.writeMessage("Employee deleted successfully" + employee);
+        }
+        catch(Exception e)
+        {
+            LoggingResult.logFailedScenario();
+        }
         System.out.println("IN");
 
 

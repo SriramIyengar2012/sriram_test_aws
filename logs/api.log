@@ -2917,3 +2917,22 @@
 22:46:43.657 Spec file added / modified: /Users/sriramiyengar/Documents/hackathontest/sriram_test_aws/specs/ui-test.spec
 22:52:12.375 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if <employee> is deleted" > 
 22:52:12.385 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if {} is deleted" parameterizedStepValue:"Verify if <employee> is deleted" parameters:"employee" > > 
+22:29:13.612 Watching directory: /Users/sriramiyengar/Documents/hackathontest/sriram_test_aws/specs
+22:29:13.629 Found 1 files
+22:29:13.671 Initializing concepts cache with 0 concepts
+22:29:13.715 Initializing specs cache with 1 specs
+22:29:13.715 Adding specs from /Users/sriramiyengar/Documents/hackathontest/sriram_test_aws/specs/ui-test.spec
+22:29:13.715 Initializing steps cache with 1 steps
+22:29:13.715 Gauge daemon initialized and listening on port: 51119
+22:29:28.729 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Delete <employee>" > 
+22:29:29.152 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Delete {}" parameterizedStepValue:"Delete <employee>" parameters:"employee" > > 
+22:29:31.532 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if <employee> is deleted" > 
+22:29:31.532 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if {} is deleted" parameterizedStepValue:"Verify if <employee> is deleted" parameters:"employee" > > 
+22:29:31.816 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to employee application" > 
+22:29:31.816 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to employee application" parameterizedStepValue:"Navigate to employee application" > > 
+22:29:31.841 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if employee list is displayed" > 
+22:29:31.842 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if employee list is displayed" parameterizedStepValue:"Verify if employee list is displayed" > > 
+22:29:31.884 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Create an Employee" > 
+22:29:31.885 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Create an Employee" parameterizedStepValue:"Create an Employee" > > 
+22:29:31.941 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if <employee> is added" > 
+22:29:31.941 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if {} is added" parameterizedStepValue:"Verify if <employee> is added" parameters:"employee" > > 
