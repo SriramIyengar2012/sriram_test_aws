@@ -4,9 +4,7 @@ pipeline {
   stages {
       stage('Build') {
       
-      options {
-         skipDefaultCheckout()
-      }
+
        steps {
        
         echo 'Hello World'
