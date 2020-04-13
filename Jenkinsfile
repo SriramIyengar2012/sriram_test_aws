@@ -3,11 +3,7 @@ pipeline {
   
   stages {
       stage('Build') {
-        
-        options {
-          
-           skipDefaultCheckout() 
-        }
+       
       
         
         
